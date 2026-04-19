@@ -152,7 +152,9 @@ Define policies based on each team’s access requirements:
 - Create a role with appropriate permissions  
 - Attach role to an EC2 instance  
 <img width="960" height="300" alt="image" src="https://github.com/user-attachments/assets/8d51995b-d995-4ff5-8ff1-18d4949bc04b" />
+---
 <img width="963" height="150" alt="image" src="https://github.com/user-attachments/assets/233d7d48-32ee-42bb-8906-d7a902ef3ed8" />
+---
 <img width="954" height="471" alt="image" src="https://github.com/user-attachments/assets/0643db03-63e2-4516-ba84-b2991798cb33" />
 
 
