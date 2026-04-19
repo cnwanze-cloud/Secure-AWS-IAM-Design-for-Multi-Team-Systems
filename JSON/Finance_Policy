@@ -1,0 +1,30 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+
+    {
+      "Sid": "AllowBillingAccess",
+      "Effect": "Allow",
+      "Action": [
+        "aws-portal:ViewBilling",
+        "aws-portal:ViewUsage",
+        "aws-portal:ViewPaymentMethods",
+        "ce:Get*",
+        "budgets:ViewBudget",
+        "cur:DescribeReportDefinitions"
+      ],
+      "Resource": "*"
+    },
+
+    {
+      "Sid": "DenyComputeAndStorageAccess",
+      "Effect": "Deny",
+      "Action": [
+        "ec2:*",
+        "s3:*"
+      ],
+      "Resource": "*"
+    }
+
+  ]
+}
