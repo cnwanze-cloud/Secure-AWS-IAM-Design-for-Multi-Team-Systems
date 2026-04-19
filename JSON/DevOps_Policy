@@ -1,0 +1,43 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+
+    {
+      "Sid": "EC2FullAccess",
+      "Effect": "Allow",
+      "Action": "ec2:*",
+      "Resource": "*"
+    },
+
+    {
+      "Sid": "S3FullAccess",
+      "Effect": "Allow",
+      "Action": "s3:*",
+      "Resource": "*"
+    },
+
+    {
+      "Sid": "CloudWatchFullAccess",
+      "Effect": "Allow",
+      "Action": [
+        "cloudwatch:*",
+        "logs:*",
+        "events:*"
+      ],
+      "Resource": "*"
+    },
+
+    {
+      "Sid": "DenyBillingAccess",
+      "Effect": "Deny",
+      "Action": [
+        "aws-portal:*",
+        "budgets:*",
+        "cur:*",
+        "ce:*"
+      ],
+      "Resource": "*"
+    }
+
+  ]
+}
